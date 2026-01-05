@@ -8,7 +8,7 @@ gsap.to(".scroll",{
         scroller:"body",
         start:"top 80%",
         end:"top -100%",
-        scrub:3,
+        scrub:1,
         
 
     }
@@ -47,7 +47,7 @@ gsap.from(".proimg",{
 gsap.from(".proper2",{
     y:50,
     opacity:0,
-    stagger:0.10,
+    stagger:0.30,
     duration:0.15,
     scrollTrigger:{
         trigger:".proper2",
@@ -104,8 +104,10 @@ gsap.from(".con h2",{
 var cursor=document.querySelector(".gsap")
 document.addEventListener("mousemove",function(dets){
     gsap.to(cursor,{
-        x:dets.x,
-        y:dets.y
+        x:dets.clientX,
+        y:dets.clientY,
+        duration:0.3,
+        ease:"power2.out"
     
     })
 })
@@ -140,3 +142,4 @@ gsap.from("nav button",{
     opacity:0,
     stagger:0.10
 })
+
