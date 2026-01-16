@@ -22,6 +22,7 @@ gsap.from(".pro1",{
         scroller:"body",
         start:"top 80%",
         end:"top -100%",
+        // scrub:true
         
         
 
@@ -37,6 +38,7 @@ gsap.from(".proimg",{
         scroller:"body",
         start:"top 80%",
         end:"top -100%",
+        // scrub:true
         
         
 
@@ -54,6 +56,7 @@ gsap.from(".proper2",{
         scroller:"body",
         start:"top 80%",
         end:"top -100%",
+       
         
         
 
@@ -101,7 +104,11 @@ gsap.from(".con h2",{
     stagger:0.2,
     
 })
+
+
 var cursor=document.querySelector(".gsap")
+
+
 document.addEventListener("mousemove",function(dets){
     gsap.to(cursor,{
         x:dets.clientX,
@@ -142,4 +149,5 @@ gsap.from("nav button",{
     opacity:0,
     stagger:0.10
 })
+
 
