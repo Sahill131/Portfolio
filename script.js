@@ -15,7 +15,8 @@ gsap.to(".scroll",{
 })
 var tl=gsap.timeline()
 gsap.from(".pro1",{
-    x:-100,
+    x:-150,
+    opacity:0,
     stagger:0.5,
     scrollTrigger:{
         trigger:".pro1",
@@ -31,8 +32,9 @@ gsap.from(".pro1",{
 })
 
 gsap.from(".proimg",{
-    x:100,
+    x:150,
     stagger:0.5,
+    opacity:0,
      scrollTrigger:{
         trigger:".proimg",
         scroller:"body",
@@ -137,7 +139,7 @@ gsap.from(".development img",{
 gsap.from("li",{
     y:60,
     opacity:0,
-    stagger:0.10
+    stagger:0.15
 })
 gsap.from("nav h2",{
     y:60,
@@ -150,4 +152,58 @@ gsap.from("nav button",{
     stagger:0.10
 })
 
+gsap.from(".about",{
+    scale:1,
+    opacity:0,
+    duration:1,
+    delay:1,
+    y:20,
+     scrollTrigger:{
+        trigger:".about",
+        scroller:"body",
+        start:"top 90%",
+        end:"top -100%",
+        
+        
+
+    }
+})
+
+
+gsap.from(".one",{
+    scale:1,
+    opacity:0,
+    duration:1,
+    y:20,
+    stagger:0.5,
+     scrollTrigger:{
+        trigger:".one",
+        scroller:"body",
+        start:"top 60%",
+        end:"top -100%",
+        
+        
+        
+
+    }
+})
+
+
+
+gsap.from(".a",{
+    scale:1,
+    opacity:0,
+    y:20,
+    stagger:0.5,
+     scrollTrigger:{
+        trigger:".a",
+        scroller:"body",
+        start:"top 60%",
+        end:"top -100%",
+    
+        
+        
+
+    }
+})
 

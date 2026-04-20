@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0;
     background: #0b0f1a;
@@ -38,6 +40,11 @@ body {
     /* Deep Royal Blue */
 }
 
+
+::selection {
+    background-color: black;
+    color: royalblue;
+}
 
 * {
     margin: 0;
@@ -111,7 +118,7 @@ nav {
 
 }
 
- 
+
 .gsap {
     height: 20px;
     width: 20px;
@@ -119,10 +126,10 @@ nav {
     border-radius: 50%;
     position: fixed;
     z-index: 999;
-   
+
     pointer-events: none;
-   
-   
+
+
 
 }
 
@@ -197,8 +204,8 @@ li:hover {
 
 .me {
     border-radius: 10px 40px 10px 40px;
-    height: 550px;
-    width: 550px;
+    /* height: 550px; */
+    width: 500px;
     margin-left: 40px;
     margin-top: 30px;
 
@@ -210,7 +217,7 @@ li:hover {
 }
 
 .con {
-    color:#111;
+    color: #111;
     margin-top: 160px;
     font-size: 40px;
     margin-left: 2%;
@@ -716,7 +723,9 @@ textarea:focus {
 .me {
     margin-left: 150px;
 }
-
+.propro{
+    font-weight: normal;
+}
 
 /* 
 @media (max-width: 576px){
